@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sp-bg: #f2f6ef;
+  --color-sp-accent: #ff9e9e;
+  --color-sp-black: #111111;
+  
+  --font-family-display: "kensington", sans-serif;
+  --font-family-body: "kensington", sans-serif;
+}
+
+/* Base styles using CSS variables */
+body {
+  font-family: var(--font-family-body);
+  font-weight: 700;
+  background-color: var(--color-sp-bg);
+  color: var(--color-sp-black);
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-family-display);
+  font-weight: 700;
+}
+
+/* Form styling */
+input[disabled], button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Smooth hover transitions */
+a {
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+/* Remove underlines from links */
+a:hover {
+  text-decoration: none;
+}
+
+/* Utility class to ensure no underlines */
+.no-underline {
+  text-decoration: none !important;
+}
+
+.no-underline:hover {
+  text-decoration: none !important;
+}

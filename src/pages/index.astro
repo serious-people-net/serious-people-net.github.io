@@ -1,0 +1,115 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<main class="min-h-screen bg-sp-bg">
+		<!-- Main Content Container -->
+		<div class="max-w-5xl mx-auto px-6 sm:px-8 md:px-12">
+			<!-- Logo Section - Left Aligned -->
+			<header class="py-12 md:py-20">
+				<img 
+					src="/SP-Logo.png" 
+					alt="Serious People Logo" 
+					class="w-96 md:w-[500px] lg:w-[600px] h-auto"
+				/>
+			</header>
+
+			<!-- Content Grid -->
+			<section class="pb-16 md:pb-20">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
+					
+					<!-- Column 1: The Campaigns -->
+					<div class="space-y-6">
+						<h2 class="font-display font-bold text-2xl md:text-3xl text-sp-black mb-6">The Campaigns:</h2>
+						<div class="space-y-0">
+							<a 
+								href="https://www.linkedin.com/posts/olifrost_finance-sustainability-videogame-activity-7239230818827538432-u0ln/" 
+								target="_blank" 
+								class="block font-display font-bold text-4xl md:text-5xl text-sp-accent no-underline"
+							>
+								Asset Manager Quest ➝
+							</a>
+							<a 
+								href="https://www.linkedin.com/posts/olifrost_ogilvy-advertising-sustainability-activity-7269680066840649729-IQqW" 
+								target="_blank" 
+								class="block font-display font-bold text-4xl md:text-5xl text-sp-accent no-underline"
+							>
+								Ogilvyland ➝
+							</a>
+							<a 
+								href="https://cleancitiescampaign.org/carspreading" 
+								target="_blank" 
+								class="block font-display font-bold text-4xl md:text-5xl text-sp-accent no-underline"
+							>
+								Carspreading ➝
+							</a>
+						</div>
+					</div>
+
+					<!-- Column 2: The People -->
+					<div class="space-y-8">
+						<h2 class="font-display font-bold text-2xl md:text-3xl text-sp-black mb-6">The People</h2>
+						
+						<div class="space-y-0">
+							<a 
+								href="https://olifro.st" 
+								target="_blank" 
+								class="block font-display font-bold text-4xl md:text-5xl text-sp-accent no-underline"
+							>
+								Oli Frost
+							</a>
+							<div class="font-display font-bold text-4xl md:text-5xl text-sp-black">Creative</div>
+						</div>
+
+						<div class="space-y-0">
+							<a 
+								href="https://inprogress.studio" 
+								target="_blank" 
+								class="block font-display font-bold text-4xl md:text-5xl text-sp-accent no-underline"
+							>
+								Mike Andrews
+							</a>
+							<div class="font-display font-bold text-4xl md:text-5xl text-sp-black">Design</div>
+						</div>
+					</div>
+
+					<!-- Column 3: More People -->
+					<div class="space-y-8">
+						<div class="space-y-0 md:mt-[76px]"> <!-- Offset to align with first person -->
+							<div class="font-display font-bold text-4xl md:text-5xl text-sp-accent">
+								Edie Gill-Holder,<br>
+								Ruth Newton
+							</div>
+							<div class="font-display font-bold text-4xl md:text-5xl text-sp-black">Production</div>
+						</div>
+
+						<div class="space-y-0">
+							<div class="font-display font-bold text-4xl md:text-5xl text-sp-accent">Jamie Inman</div>
+							<div class="font-display font-bold text-4xl md:text-5xl text-sp-black">Campaign Director</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Newsletter Section - Inline with content -->
+			<section class="pb-20 md:pb-24">
+				<h2 class="font-display font-bold text-2xl md:text-3xl text-sp-black mb-6">The Newsletter:</h2>
+				<div style="min-height: 58px;max-width: 440px;margin: 0 0;width: 100%">
+					<script src="https://cdn.jsdelivr.net/ghost/signup-form@~0.2/umd/signup-form.min.js" data-button-color="#000000" data-button-text-color="#FFFFFF" data-site="https://serious-people.ghost.io/" data-locale="en" async></script>
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer - Full width background, left-aligned content -->
+		<footer class="bg-sp-black">
+			<div class="max-w-5xl mx-auto px-6 sm:px-8 md:px-12 py-10 md:py-12">
+				<img 
+					src="/SP-blink_1.gif" 
+					alt="Serious People Blinking Logo" 
+					class="w-14 h-auto md:w-16"
+				/>
+			</div>
+		</footer>
+	</main>
+</Layout>
