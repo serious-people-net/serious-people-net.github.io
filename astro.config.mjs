@@ -7,4 +7,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  outDir: 'dist',
+  site: 'https://serious-people-net.github.io/',
+  base: '/',
 });
