@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+
+// Get all campaigns and sort them by order
+const campaigns = await getCollection('campaigns');
+const sortedCampaigns = campaigns.sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
+---
+
+<div class="space-y-0">
+	{sortedCampaigns.map((campaign) => (
+		<a
+			href={campaign.data.url}
+			target="_blank"
+			class="block font-display font-bold text-4xl md:text-5xl text-sp-accent no-underline whitespace-nowrap"
+		>
+			<span class="whitespace-nowrap">
+				{campaign.data.title} ➝
+			</span>
+		</a>
+	))}
+</div>
