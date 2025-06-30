@@ -1,9 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 
-// Get all featured campaigns and sort by date (newest first)
+// Get all featured campaigns and sort by filename (alphabetical = display order)
 const campaigns = await getCollection('campaigns', ({ data }) => data.featured);
-const sortedCampaigns = campaigns.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+const sortedCampaigns = campaigns.sort((a, b) => a.id.localeCompare(b.id));
 ---
 
 <div class="space-y-0">

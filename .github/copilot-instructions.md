@@ -1,1 +1,1 @@
-You're rebuilding the Serious People website from Squarespace into a static site with astro. You're using Tailwind 4 which uses theme directives not a js file for theme stuff.
+This is the Serious People portfolio page, with basic documentation of the campaigns.

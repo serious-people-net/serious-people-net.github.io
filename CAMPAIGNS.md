@@ -12,7 +12,7 @@ This project uses Astro's content collections to manage campaign links. This mak
 title: "Campaign Name"
 url: "https://example.com"
 description: "Brief description of the campaign"
-order: 7
+publishedAt: 2025-06-30
 featured: true
 ---
 
@@ -26,7 +26,7 @@ Simply edit the relevant `.md` file in `src/content/campaigns/`. You can:
 - Change the `title` (this appears on the website)
 - Update the `url` (where the link goes)
 - Modify the `description` 
-- Adjust the `order` (lower numbers appear first)
+- Adjust the `publishedAt` date (newer dates appear first - format: YYYY-MM-DD)
 - Set `featured: false` to hide a campaign temporarily
 
 ## Current Campaigns
@@ -44,9 +44,17 @@ The campaigns are stored in these files:
 
 The `CampaignList.astro` component automatically:
 
-1. Reads all campaign files from the content collection
-2. Sorts them by the `order` field
+1. Reads all featured campaign files from the content collection
+2. Sorts them by `publishedAt` date (newest first)
 3. Renders them as links with the same styling as before
 4. Adds the ➝ arrow automatically
 
-This means you never have to copy/paste anchor tags again!
+## Ordering Campaigns
+
+Campaigns are automatically ordered by their `publishedAt` date, with the most recent appearing first. To reorder:
+
+- **Move a campaign to the top**: Give it a recent date (e.g., today's date or future)
+- **Move a campaign down**: Give it an older date
+- **No more manual numbering**: Just use natural dates when campaigns were launched
+
+This means you never have to copy/paste anchor tags or manage tedious order numbers again!

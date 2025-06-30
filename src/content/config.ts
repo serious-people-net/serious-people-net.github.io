@@ -6,8 +6,8 @@ const campaigns = defineCollection({
     title: z.string(),
     url: z.string().url(),
     description: z.string().optional(),
-    order: z.number().optional(),
-    featured: z.boolean().default(false),
+    publishedAt: z.coerce.date(), // This will convert string dates to Date objects
+    featured: z.boolean().default(true),
   }),
 });
 

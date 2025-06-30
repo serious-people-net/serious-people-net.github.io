@@ -2,7 +2,7 @@
 title: "AI CEO.app"
 url: "https://replaceyourboss.ai/"
 description: ""
-order: 1
+publishedAt: 2025-07-15
 featured: true
 ---
 
