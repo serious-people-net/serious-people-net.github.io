@@ -1,21 +1,21 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection } from 'astro:content';
 
 // Get all featured campaigns and sort by filename (alphabetical = display order)
-const campaigns = await getCollection("campaigns", ({ data }) => data.featured);
+const campaigns = await getCollection('campaigns', ({ data }) => data.featured);
 const sortedCampaigns = campaigns.sort((a, b) => a.id.localeCompare(b.id));
 ---
 
 <div class="space-y-0">
-	{
-		sortedCampaigns.map((campaign) => (
-			<a
-				href={campaign.data.url}
-				target="_blank "
-				class="block font-display font-bold text-4xl md:text-5xl text-sp-accent no-underline whitespace-nowrap"
-			>
-				<span class="whitespace-nowrap">{campaign.data.title} ➝</span>
-			</a>
-		))
-	}
+	{sortedCampaigns.map((campaign) => (
+		<a
+			href={campaign.data.url}
+			target="_blank "
+			class="block font-display font-bold text-4xl md:text-5xl text-sp-accent no-underline whitespace-nowrap"
+		>
+			<span class="whitespace-nowrap">
+				{campaign.data.title} ➝
+			</span>
+		</a>
+	))}
 </div>
