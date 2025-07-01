@@ -18,9 +18,7 @@ import CampaignList from "../components/CampaignList.astro";
 
 			<!-- Content Grid -->
 			<section class="pb-16 md:pb-20">
-				<div
-					class="grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-16"
-				>
+				<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-16">
 					<!-- Column 1: The Campaigns -->
 					<div class="space-y-6">
 						<h2
@@ -29,7 +27,7 @@ import CampaignList from "../components/CampaignList.astro";
 							The Campaigns:
 						</h2>
 						<div class="space-y-0">
-							<CampaignList />
+							<CampaignList />		
 						</div>
 					</div>
 
@@ -128,8 +126,14 @@ import CampaignList from "../components/CampaignList.astro";
 
 		<!-- Footer - Full width background, left-aligned content -->
 		<footer class="bg-sp-black">
-			<div class="max-w-7xl mx-auto px-6 sm:px-8 md:px-12 pt-2 md:py-8 flex flex-col items-start gap-4">
-				<a href="mailto:hello@seriouspeople.co" class="text-white text-2xl font-display no-underline hover:text-sp-accent transition-colors mb-8">hello@seriouspeople.co</a>
+			<div
+				class="max-w-7xl mx-auto px-6 sm:px-8 md:px-12 pt-2 md:py-8 flex flex-col items-start gap-4"
+			>
+				<a
+					href="mailto:hello@seriouspeople.co"
+					class="text-white text-2xl font-display no-underline hover:text-sp-accent transition-colors mb-8"
+					>hello@seriouspeople.co</a
+				>
 				<img
 					src="/SP-blink_1.gif"
 					alt="Serious People Blinking Logo"
