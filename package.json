@@ -2,7 +2,7 @@
   "name": "serious-people",
   "type": "module",
   "version": "0.0.1",
-  "homepage": "https://serious-people-net.github.io/",
+  "homepage": "https://seriouspeople.co/",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
