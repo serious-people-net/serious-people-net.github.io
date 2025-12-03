@@ -8,6 +8,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   outDir: 'dist',
-  site: 'https://serious-people-net.github.io/',
+  site: 'https://seriouspeople.co/',
   base: '/',
 });
