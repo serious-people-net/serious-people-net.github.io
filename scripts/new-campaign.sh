@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
+
 set -euo pipefail
 
-CAMPAIGNS_DIR="src/content/campaigns"
+# Resolve campaigns directory relative to this script's location
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
+CAMPAIGNS_DIR="$SCRIPT_DIR/../src/content/campaigns"
 
 if [[ ! -d "$CAMPAIGNS_DIR" ]]; then
   echo "Error: Campaign directory not found: $CAMPAIGNS_DIR"
